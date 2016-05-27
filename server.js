@@ -20,7 +20,7 @@ app.use(middleWare.logger);
 // });
 
 app.get('/about', middleWare.requireAuthentication, function(req, res){
-	res.send('Hello About!');
+	res.send('Hello About!!');
 })
 
 app.use(express.static(__dirname + '/public'));
